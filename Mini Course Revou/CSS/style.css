@@ -1,0 +1,161 @@
+body {
+    background-color: #d8d8d8;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007ACC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 125px;
+}
+
+header h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.judul {
+    font-size: 14pt;
+    color:wheat;
+}
+
+.layout {
+    background-color:  #ffffff;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.layoutpersegi, .layoutpersegipanjang{
+    background-color:  #ffffff;
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.container-button {
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-button a {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #007ACC;
+    box-shadow: 1px 1px 2px black;
+    color: white;
+    padding-block: 7px;
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+}
+
+.container-button a:hover {
+    background-color: #ffffff;
+    color: #007ACC;
+    border: 2px solid #007ACC;
+}
+
+.layout1 {
+    background-color:  #ffffff;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #007ACC;
+}
+
+.header-layout1 {
+    background-color: #007ACC;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: white;
+    padding: 10px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.calculator {
+    margin: 15px;
+}
+
+#rumus {
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+
+.calculator p {
+    text-align: left;
+}
+
+.tombol {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button-hitung:hover {
+    background-color: #ffffff;
+    color: #007ACC;
+    border: 2px solid #007ACC;;
+}
+
+.button-reset:hover {
+    background-color: #ffffff;
+    color: #ff9900;
+    border: 2px solid #ff9900;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.button-hitung {
+    background-color: #007ACC;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.button-reset {
+    background-color: #ff9900;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 80%;
+    height: 2em;
+}

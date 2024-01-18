@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik</title>
+</head>
+<body>
+    <header> 
+        <h1>Katik <span class="judul">Kalkulator Matematik</span></h1>
+    </header>
+
+    <div class="layout">
+        <h1>Welcome to Katik</h1>
+        <p>Hai sobat, selamat datang di Katik :] <br>
+        Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+        </p>
+        <div class="container-button">
+            <a class="persegi">Persegi</a>
+            <a class="persegi-panjang">Persegi Panjang</a>
+        </div>
+        <div class="layoutpersegi">
+            <div class="layout1">
+                <div class="header-layout1">
+                    <h2>Luas Persegi</h2>
+                </div>
+                <img src="asset/Persegi.png" alt="persegi">
+                <div class="calculator">
+                    <p>Rumus luas persegi yaitu :</p>
+                    <p id="rumus">L = S x S</p>
+                    <p>Di mana : <br>L = Luas<br>S = Sisi</p>
+                    <br>
+
+                    <h1>Hitung Luas Persegi</h1>
+                    <form id="myForm">
+                        <input type="number" placeholder="Sisi" id="angka" min="0" name="angka" required>
+                        <p><span id="rumusLuasPersegi"></span></p>
+                        <p><span id="sisiPersegi"></span></p>
+                        <p><span id="hasilP"></span></p>
+                        <div class="tombol">
+                            <button class="button-hitung" type="button" id="hitungButton">Hitung</button>
+                            <button class="button-reset" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="layout1">
+                <div class="header-layout1">
+                    <h2>Keliling Persegi</h2>
+                </div>
+                <img src="asset/Persegi.png" alt="persegi">
+                <div class="calculator">
+                    <p>Rumus keliling persegi yaitu :</p>
+                    <p id="rumus">K = 4 x S</p>
+                    <p>Dimana : <br>K = Keliling <br> S = Sisi</p>
+                    <br>
+
+                    <h1>Hitung Keliling Persegi</h1>
+                    <form id="myForm">
+                        <input type="number" placeholder="Sisi" id="angkaKeliling" min="0" name="angkaKeliling" required>
+                        <p><span id="rumusKelilingPersegi"></span></p>
+                        <p><span id="sisiKeliling"></span></p>
+                        <p><span id="hasilKeliling"></span></p>
+                        <div class="tombol">
+                            <button class="button-hitung" type="button" id="hitungKelilingButton">Hitung</button>
+                            <button class="button-reset" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="layoutpersegipanjang">
+            <div class="layout1">
+                <div class="header-layout1">
+                    <h2>Luas Persegi Panjang</h2>
+                </div>
+                <img src="asset/Persegi Panjang.jpg" alt="persegi panjang">
+                <div class="calculator">
+                    <p>Rumus luas persegi panjang yaitu :</p>
+                    <p id="rumus">L = P x l</p>
+                    <p>Dimana : <br>L = Luas<br>P = Panjang<br>l = Lebar</p>
+                    <br>
+
+                    <h1>Hitung Luas Persegi Panjang</h1>
+                    <form id="myForm">
+                        <input type="number" placeholder="Panjang" id="panjang" min="0" name="panjang" required>
+                        <input type="number" placeholder="Lebar" id="lebar" min="0" name="lebar" required>
+                        <p><span id="rumusLuasPP"></span></p>
+                        <p><span id="panjangLebar"></span></p>
+                        <p><span id="hasilLuasPP"></span></p>
+                        <div class="tombol">
+                            <button class="button-hitung" type="button" id="hitungLuasButton">Hitung</button>
+                            <button class="button-reset" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="layout1">
+                <div class="header-layout1">
+                    <h2>Keliling Persegi Panjang</h2>
+                </div>
+                <img src="asset/Persegi Panjang.jpg" alt="persegi panjang">
+                <div class="calculator">
+                    <p>Rumus keliling persegi panjang yaitu :</p>
+                    <p id="rumus">K = 2 (P + l)</p>
+                    <p>Dimana : <br>K = Keliling<br>P = Panjang<br>l = Lebar</p>
+                    <br>
+
+                    <h1>Hitung Keliling Persegi</h1>
+                    <form id="myForm">
+                        <input type="number" placeholder="Panjang" id="panjangKeliling" min="0" name="panjangKeliling" required>
+                        <input type="number" placeholder="Lebar" id="lebarKeliling" min="0" name="lebarKeliling" required>
+                        <p><span id="rumusKelilingPP"></span></p>
+                        <p><span id="plKeliling"></span></p>
+                        <p><span id="hasilKelilingPP"></span></p>
+                        <div class="tombol">
+                            <button class="button-hitung" type="button" id="hitungKelilingPPButton">Hitung</button>
+                            <button class="button-reset" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
